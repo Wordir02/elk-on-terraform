@@ -46,6 +46,8 @@ resource "docker_container" "es01" {
   }
 
   env = var.env
+    
+
 
   ports {
     internal = 9200

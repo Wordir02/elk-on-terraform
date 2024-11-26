@@ -13,7 +13,13 @@ variable "stack_version" {
   type = string
 }
 
+
+
+
+
 variable "env" {
   description = "Environment variables for Elasticsearch container"
   type = list(string)
 }
+
+

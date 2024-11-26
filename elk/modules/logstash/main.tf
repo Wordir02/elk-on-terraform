@@ -46,12 +46,12 @@ resource "docker_container" "logstash" {
 
   volumes {
     container_path = "/usr/share/logstash/pipeline/logstash.conf"
-    host_path      = "/home/wordir/elk-on-terraform/${path.module}/logstash.conf"
+    host_path      = "/home/wordir/elk-on-terraform/elk/${path.module}/logstash.conf"
   }
 
   volumes {
     container_path = "/usr/share/logstash/config/logstash.yml"
-    host_path      = "/home/wordir/elk-on-terraform/${path.module}/logstash.yml"
+    host_path      = "/home/wordir/elk-on-terraform/elk/${path.module}/logstash.yml"
   }
 
  env = var.env
